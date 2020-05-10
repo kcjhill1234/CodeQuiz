@@ -33,7 +33,7 @@ endElement.querySelector('button').addEventListener('click', event => {
         highScoreHistory = [highScore];
     }
     localStorage.setItem("highScores", JSON.stringify(highScoreHistory));
-    location.href = '/homework-4/highScores.html';
+    location.href = '/homework-4/highScores/';
 })
 startElement.querySelector('button').addEventListener('click', startGame);
 
