@@ -20,7 +20,7 @@ function getHighScores() {
 }
 
 goBackButton.addEventListener('click', () => {
-    location.href = '/homework-4/index.html';
+    location.href = '/homework-4/';
 });
 
 resetHighScoresButton.addEventListener("click", () => {
