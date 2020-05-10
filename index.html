@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Assets/CSS/styles.css">
     <title>Code Quiz</title>
 </head>
-<body>
-    <h1>Coding Quiz</h1>
-    <p>What letter does Code start with?</p>
-    <p>What does html stand for?</p>
-    <p>What is smarter than computers?</p>
-    <p>What do you call JavaScript</p>
 
-<script src="./index.js"></script>
+
+<body>
+    <nav>
+        <a href="highscores.html" id="highScores">View High Scores</a>
+        <div id="timer"></div>
+    </nav>
+    <div class="start quiz">
+        <h1>Welcome to the Code Quiz</h1>
+        <p>You have 30 seconds to complete this quiz</p>
+        <button>Start Quiz</button>
+    </div>
+    <div class="quiz container">
+        <div class="questions-container">
+            <div id="question">This is a test Question?</div>
+            <div id="question-buttons">
+                <button class="answer">Option 1</button>
+                <button class="answer">Option 2</button>
+                <button class="answer">Option 3</button>
+                <button class="answer">Option 4</button>
+            </div>
+
+        </div>
+        <div class="result"></div>
+    </div>
+    <div class="quiz end">
+        <h1>All done</h1>
+            <p>Your Score was: 10</p>
+            <form>
+                <label for="userInitials">Enter initials</label>
+                <input name="userInitials" id="userInitials" placeholder="Name" type="text">
+                <button>submit</button>
+            </form>
+        
+    </div>
+    <script src="./Assets/Javascript/questions.js"></script>
+<script src="./Assets/Javascript/index.js"></script>
 </body>
+
 </html>
